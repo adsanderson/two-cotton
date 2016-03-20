@@ -1,0 +1,94 @@
+.body {
+  background-color: #BEBBAA;
+  margin: 0;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2rem;
+}
+
+.container {
+  background-repeat: repeat-y;
+  background-position: 50% 100%;
+  background-image: url(/assests/images/string_fixed.svg);
+  padding: 2000px 0 85px;
+  display: flex;
+  flex-direction: column;
+}
+
+.photo {
+  text-align: center;
+  background-color: #FDFEF8;
+  margin-bottom: 85px;
+  transform-origin: top;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1rem solid #FDFEF8;
+  align-self: center;
+  width: 80%;
+  max-width: 640px;
+  box-sizing: border-box;
+}
+
+.photo__img {
+  width: 100%;
+}
+
+.photo--swing {
+  animation: swing 4s infinite ease-in-out;
+}
+
+.photo--pad {
+  padding-top: 3rem;
+}
+
+.bow {
+  text-align: center;
+  z-index: 2;
+}
+.bow__img {
+  position: absolute;
+  transform: translate(-53%, -30%) scale(0.75);
+}
+.bow--swing {
+  animation: swing--slow 4s infinite ease-in-out;
+}
+
+.photo:nth-child(n+1) {
+  transform: rotateZ(2deg);
+}
+.photo:nth-child(n+2) {
+  transform: rotateZ(3deg);
+}
+.photo:nth-child(n+3) {
+  transform: rotateZ(-1deg);
+}
+.photo:nth-child(n+4) {
+  transform: rotateZ(1deg);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotateZ(2deg);
+  }
+  50% {
+    transform: rotateZ(-1deg);
+  }
+  100% {
+    transform: rotateZ(2deg);
+  }
+}
+
+@keyframes swing--slow {
+  0% {
+    transform: rotateZ(-1deg);
+  }
+  50% {
+    transform: rotateZ(1deg);
+  }
+  100% {
+    transform: rotateZ(-1deg);
+  }
+}

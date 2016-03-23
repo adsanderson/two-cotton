@@ -8,7 +8,7 @@
 .container {
   background-repeat: repeat-y;
   background-position: 50% 100%;
-  background-image: url(/assests/images/string_fixed.svg);
+  background-image: url(/assets/images/string_fixed.svg);
   padding: 2000px 0 85px;
   display: flex;
   flex-direction: column;

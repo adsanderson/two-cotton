@@ -1,0 +1,45 @@
+.body {
+  background-color: #BEBBAA;
+  background-image: url(images/2.leather-1.jpg);
+  background-size: 50%;
+  margin: 0;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2rem;
+  padding: 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #552F00;
+}
+
+.shadow {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4), inset 2px 2px 40px rgba(0, 0, 0, 0.3);
+  margin: 30px;
+  padding: 10px;
+}
+
+.image {
+  width: 400px;
+  border: 5px solid white;
+  transition: 300ms;
+}
+
+.shadow:nth-child(n+1) {
+  transform: rotateZ(10deg)
+} 
+
+.image:nth-child(n+2) {
+  transform: rotateZ(-10deg)
+} 
+
+.image:nth-child(n+3) {
+  transform: rotateZ(8deg)
+} 
+
+.image:nth-child(n+4) {
+  transform: rotateZ(2deg)
+} 
+
+.image:nth-child(n+5) {
+  transform: rotateZ(-5deg)
+} 

@@ -8,7 +8,7 @@
 .container {
   background-repeat: repeat-y;
   background-position: 50% 100%;
-  background-image: url(/assets/images/string_fixed.svg);
+  background-image: url(images/string_fixed.svg);
   padding: 2000px 0 85px;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@
   background-color: #FDFEF8;
   margin-bottom: 85px;
   transform-origin: top;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2);
   border: 1rem solid #FDFEF8;
   align-self: center;
   width: 80%;
